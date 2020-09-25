@@ -3,55 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=" />
+
     <link rel="stylesheet" href="index.css" />
+
     <title>Booksy clone</title>
   </head>
   <body>
     <main>
-      <nav class="wrapper">
+      <nav class="navbar">
         <h1>Booksy</h1>
-        <form action="/search-result" id="search-bar">
+        <form action="/search-result" class="form">
           <input
             type="text"
             name="search"
             placeholder="Search by author, titles, name"
           />
         </form>
-        <div id="account">
-          <p>
-            <img id="heart" src="./images/heart.svg" alt="heart" />
-          </p>
-          <div id="basket">0</div>
+        <div class="account">
+          <img class="account_heart" src="./images/heart.svg" alt="heart" />
+
+          <div class="account_basket">0</div>
           <p>EN</p>
         </div>
       </nav>
-      <div class="wrapper">
-        <ul id="links">
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/bestseller">Bestseller</a>
-          </li>
-          <li>
-            <a href="/category">Category</a>
-          </li>
-          <li>
-            <a href="/findastore">Find a Store</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-        </ul>
-      </div>
-      <div class="wrapper" id="landing">
-        <div id="build-library">
-          <h1>Build your library</h1>
+
+      <ul class="menu">
+        <li class="menu_item">
+          <a class="link" href="/home">Home</a>
+        </li>
+        <li class="menu_item">
+          <a class="link" href="/bestseller">Bestseller</a>
+        </li>
+        <li class="menu_item">
+          <a class="link" href="/category">Category</a>
+        </li>
+        <li class="menu_item">
+          <a class="link" href="/findastore">Find a Store</a>
+        </li>
+        <li class="menu_item">
+          <a class="link" href="/blog">Blog</a>
+        </li>
+      </ul>
+
+      <div class="landing">
+        <div class="landing_container">
+          <h2>Build your library</h2>
           <p>Buy two selected books and get one for free</p>
-          <a href="/library">View all</a>
+          <a class="landing_container_link" href="/library">View all</a>
         </div>
 
-        <div>
+        <div class="landing_container">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player
             src="https://assets5.lottiefiles.com/packages/lf20_Cp59I2.json"
@@ -63,28 +64,49 @@
           ></lottie-player>
         </div>
       </div>
-      <div id="library" class="wrapper">
-        <div class="header">
-          <h2>Popular Now</h2>
-          <a href="/library">View All</a>
+
+      <div class="library">
+        <div class="library_header">
+          <h3>Popular Now</h3>
+          <a class="link" href="/library">View All</a>
         </div>
-        <div id="books">
-          <div class="book">
+        <div class="library_gallery">
+          <div class="library_gallery_book">
             <img src="./images/book-img.jpg" alt="book" style="height: 100px" />
             <h3>Creative Hustle</h3>
             <p>Ramen Albert</p>
             <p>&#x2B50a;</p>
           </div>
-          <div class="book">
+          <div class="library_gallery_book">
             <img src="./images/book-img.jpg" alt="book" style="height: 100px" />
             <h3>Art Unleashed</h3>
             <p>Ramen Albert</p>
             <p></p>
           </div>
-          <div class="book"></div>
-          <div class="book"></div>
-          <div class="book"></div>
-          <div class="book"></div>
+          <div class="library_gallery_book">
+            <img src="./images/book-img.jpg" alt="book" style="height: 100px" />
+            <h3>Creative Hustle</h3>
+            <p>Ramen Albert</p>
+            <p>&#x2B50a;</p>
+          </div>
+          <div class="library_gallery_book">
+            <img src="./images/book-img.jpg" alt="book" style="height: 100px" />
+            <h3>Art Unleashed</h3>
+            <p>Ramen Albert</p>
+            <p></p>
+          </div>
+          <div class="library_gallery_book">
+            <img src="./images/book-img.jpg" alt="book" style="height: 100px" />
+            <h3>Creative Hustle</h3>
+            <p>Ramen Albert</p>
+            <p>&#x2B50a;</p>
+          </div>
+          <div class="library_gallery_book">
+            <img src="./images/book-img.jpg" alt="book" style="height: 100px" />
+            <h3>Art Unleashed</h3>
+            <p>Ramen Albert</p>
+            <p></p>
+          </div>
         </div>
       </div>
     </main>
